@@ -7,7 +7,7 @@ vowels = 'aeiouy'
 new_string = ''
 # check each letter in the input
 for letter in inp:
-    # current letter equals the current index value
+    # set up current letter variable
     current_char = letter
     # test and see if previous letter = current letter
     if prev_char == current_char:
