@@ -6,9 +6,9 @@ vowels = 'aeiouy'
 # create a variable for the new string
 new_string = ''
 # check each letter in the input
-for index in range(len(inp)):
+for letter in inp:
     # current letter equals the current index value
-    current_char = inp[index]
+    current_char = letter
     # test and see if previous letter = current letter
     if prev_char == current_char:
         # test if double letters are vowels
@@ -22,6 +22,6 @@ for index in range(len(inp)):
     else:
         new_string += current_char
     # set previous letter to current letter at end of loop
-    prev_char = inp[index]
+    prev_char = letter
 # print the new string
 print(new_string)
