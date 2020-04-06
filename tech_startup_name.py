@@ -1,10 +1,9 @@
 # given a name from a user, remove the last vowel that comes before a non-vowel
 inp = input("What's the name of your startup? ")
-# create vowels variable and current char, next char holders
+# create vowels variable and current letter
 vowels = 'aeiouyAEIOUY'
-next_char = ''
 current_char = ''
-# creat a variable for the new string that will be a list for now
+# create a variable for the new string that will be a list for now
 new_string = []
 # create counter variable and set equal to one less than len(input) so we can start at the last index
 counter = (len(inp) - 1)
@@ -14,8 +13,6 @@ skip = 0
 while 0 <= counter:
     # set variable for current letter in string
     current_char = inp[counter]
-    # set variable for the next letter in string 
-    next_char = inp[counter - 1]
     # if current letter is not a vowel, add it to the front of the new string
     if current_char not in vowels:
        new_string.insert(0, current_char) 
