@@ -1,7 +1,7 @@
 # given a name from a user, remove the last vowel that comes before a non-vowel
 inp = input("What's the name of your startup? ")
 # create vowels variable and current char, next char holders
-vowels = 'aeiouy'
+vowels = 'aeiouyAEIOUY'
 next_char = ''
 current_char = ''
 # creat a variable for the new string that will be a list for now
